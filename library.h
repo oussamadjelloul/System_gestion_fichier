@@ -1,0 +1,10 @@
+int LectureSequntielle(char filename[]);
+void Afficher_Secteur();
+unsigned char* Lire_Secteur(char disque_physique[], long int Num_sect);
+void Liste_Disques();
+unsigned char* Lire_Bloc(char disque_physique[], long int Num_Bloc, long int TailleBloc);
+void Afficher_Infos_disque(char disque_physique[]);
+void Partition_etundue(long int adrlba, int *j,FILE  *disque);
+struct BOOT Lecture_MBR(FILE *disque);
+void Afficher_Secteur_nbOctet (char disque_physique[], long int Num_sect, int nbOctet);
+//int  Lecture_MBR(char disque_physique[]);
